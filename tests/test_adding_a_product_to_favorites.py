@@ -1,6 +1,5 @@
 import pytest
 from pom.adding_to_favorites import FavoritesPage
-import time
 
 
 def test_adding_into_favorites(web_browser):
@@ -18,7 +17,7 @@ def test_adding_into_favorites(web_browser):
     page.header_link_into_favorites.click()
     assert page.get_current_url() == 'https://lascana.ru/personal/favorite/'
 
-    #
+
     page.favorites_item_image.click()
     assert item_article == page.uniq_product_article.get_text()
 
