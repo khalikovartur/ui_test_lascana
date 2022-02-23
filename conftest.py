@@ -26,7 +26,7 @@ def pytest_runtest_makereport(item, call):
 def web_browser(request, selenium):
 
     browser = selenium
-    browser.set_window_size(1800, 1000)
+    browser.set_window_size(1400, 1200)
     yield browser
 
     # Do teardown (this code will be executed after each test).
