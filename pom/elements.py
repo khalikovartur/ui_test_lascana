@@ -14,7 +14,7 @@ class WebElement:
     _timeout = 10
     _wait_after_click = True
 
-    def __init__(self, timeout=10, wait_after_click=True, **kwargs):
+    def __init__(self, timeout: object = 10, wait_after_click: object = True, **kwargs: object) -> object:
         self._timeout = timeout
         self._wait_after_click = wait_after_click
 
