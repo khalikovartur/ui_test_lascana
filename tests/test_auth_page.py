@@ -2,10 +2,11 @@ import pytest
 from pom.smoke_regis_auth import AuthPage
 import time
 
-def test_registration(web_browser):
+def test_authentification_user(web_browser):
+
     user_name = 'Алла'
-    e_mail='alla@mail.com'
-    password='alla1234'
+    e_mail ='alla@mail.com'
+    password ='alla1234'
     
     page = AuthPage(web_browser)
     page.user_icon.click()

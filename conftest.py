@@ -44,10 +44,11 @@ def web_browser(request, selenium):
                           name=request.function.__name__,
                           attachment_type=allure.attachment_type.PNG)
 
+
             # For happy debugging:
             print('URL: ', browser.current_url)
             print('Browser logs:')
-            for log in browser.get_log('browser', "goog"):
+            for log in browser.get_log('browser'):
                 print(log)
         except:
             pass #just ignore any errors here

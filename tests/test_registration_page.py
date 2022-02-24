@@ -1,12 +1,12 @@
 import pytest 
 from pom.smoke_regis_auth import RegisPage
-import time
 
-def test_registration(web_browser):
-    name ='Алла'
-    last_name ='Аллова'
-    e_mail ='alla@mail.com'
-    password ='alla1234'
+
+def test_registration_new_user(web_browser):
+    name = 'Алла'
+    last_name = 'Аллова'
+    e_mail = 'alla@email.com'
+    password = 'alla1234'
     
     page = RegisPage(web_browser)
     page.user_icon.click()

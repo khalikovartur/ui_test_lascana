@@ -3,3 +3,5 @@ termcolor~=1.1.0
 allure-python-commons
 selenium~=4.1.0
 pytest~=7.0.1
+allure-pytest
+

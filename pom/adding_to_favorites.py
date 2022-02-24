@@ -2,7 +2,7 @@ from pom.base import WebPage
 from pom.elements import WebElement
 
 
-class FavoritesPage(WebPage):
+class FavoritesProducts(WebPage):
 
     def __init__(self, web_driver, url=''):
         url = 'https://lascana.ru/'
@@ -14,5 +14,4 @@ class FavoritesPage(WebPage):
     icon_add_to_favorites = WebElement(css_selector='a.link:nth-child(17)')
     uniq_product_article = WebElement(id='product__article')
     header_link_into_favorites = WebElement(css_selector='.header-links__favourites')
-    # discount_window = WebElement(css_selector='.discounts-popup')
     favorites_item_image = WebElement(css_selector='.personal__favorite--item_image')

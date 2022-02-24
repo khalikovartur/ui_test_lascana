@@ -1,10 +1,10 @@
 import pytest
-from pom.adding_to_favorites import FavoritesPage
+from pom.adding_to_favorites import FavoritesProducts
 
 
 def test_adding_into_favorites(web_browser):
 
-    page = FavoritesPage(web_browser)
+    page = FavoritesProducts(web_browser)
 
     page.kupalniki_tab.click()
     page.first_picture.click()

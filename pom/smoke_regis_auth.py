@@ -9,10 +9,8 @@ class RegisPage(WebPage):
         super().__init__(web_driver, url)   
         
     user_icon = WebElement(css_selector='.header-links__account')
-    #user_icon = WebElement(xpath='/html/body/header/div[2]/div/div[3]/a[2]')
-    
     regis_link = WebElement(css_selector='#auth_form > div > div:nth-child(2) > a')
-    
+
     cookies = WebElement(css_selector='body > div.cookie-popup > div')
     
     last_name = WebElement(css_selector='#register_form > label:nth-child(6) > input')
