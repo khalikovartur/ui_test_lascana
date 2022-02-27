@@ -1,10 +1,10 @@
 How To Run Tests
 
-1)In you terminale line:
+1)In your terminale line:
 $ git clone https://github.com/khalikovartur/ui_tests_lascana.git
 
-# cd ui_tests_lascana
-# mkvirtualenv
+#cd ui_tests_lascana
+#mkvirtualenv
 
 2)Install all requirements in terminal: 
 $ pip3 install -r requirements.txt
