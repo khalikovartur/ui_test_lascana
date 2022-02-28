@@ -16,3 +16,9 @@ $ pip3 install -r requirements.txt
 
 
 4)Run tests in terminal: $ python3 -m pytest -v --driver Chrome --driver-path "xpath to your chromedriver"
+
+5)For 'allure' report run test in terminal with flag:  $ python3 -m pytest -v --alluredir=allurelog --driver Chrome --driver-path "xpath to your chromedriver"
+
+6)For show 'allure' repot : $ allure serve allurelog/
+
+7)For show screenshots: $ mkdir screenshots
