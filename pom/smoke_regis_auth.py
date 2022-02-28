@@ -12,7 +12,7 @@ class RegisPage(WebPage):
     regis_link = WebElement(css_selector='#auth_form > div > div:nth-child(2) > a')
 
     cookies = WebElement(css_selector='body > div.cookie-popup > div')
-    
+    discount_frame = WebElement(xpath='//*[@id="top-modal"]/div')
     last_name = WebElement(css_selector='#register_form > label:nth-child(6) > input')
     name = WebElement(css_selector='#register_form > label:nth-child(7) > input')
     email = WebElement(css_selector='#register_form > label:nth-child(9) > input')

@@ -9,6 +9,7 @@ class FavoritesProducts(WebPage):
         super().__init__(web_driver, url)
 
     cookies = WebElement(css_selector='body > div.cookie-popup > div')
+    discount_frame = WebElement(xpath='//*[@id="top-modal"]/div')
     kupalniki_tab = WebElement(css_selector='li.navigation-menu__item:nth-child(4) > a:nth-child(1)')
     first_picture = WebElement(xpath='/html/body/section/div[4]/div/div/div[1]/a/div[1]')
     #icon_add_to_favorites = WebElement(css_selector='a.link:nth-child(17)')

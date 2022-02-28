@@ -1,7 +1,8 @@
 from pom.filter_in_catalog import ProductsFilters
-import time
+
 
 def test_checking_the_filter_operation_by_price(web_browser):
+    """The test sets a price filter and compares the price range against all filtered offers."""
 
     page = ProductsFilters(web_browser)
     min_cost = 2000

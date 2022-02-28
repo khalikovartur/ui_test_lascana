@@ -2,7 +2,8 @@ import pytest
 from pom.smoke_regis_auth import AuthPage
 import time
 
-def test_authentification_user(web_browser):
+def test_authentication_user(web_browser):
+    """ Test go through the authentication of an existing user."""
 
     user_name = 'Алла'
     e_mail ='alla@mail.com'

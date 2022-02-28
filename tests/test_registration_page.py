@@ -3,6 +3,8 @@ from pom.smoke_regis_auth import RegisPage
 
 
 def test_registration_new_user(web_browser):
+    """New User Registration. To pass the test, enter new data."""
+
     name = 'Алла'
     last_name = 'Аллова'
     e_mail = 'alla@email.com'
@@ -12,6 +14,7 @@ def test_registration_new_user(web_browser):
     page.user_icon.click()
     page.regis_link.click()
     page.cookies.delete()
+
     
     page.last_name.send_keys(last_name)
     page.name.send_keys(name)

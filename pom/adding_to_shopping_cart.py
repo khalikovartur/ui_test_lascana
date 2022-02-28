@@ -9,6 +9,7 @@ class ShoppingCart(WebPage):
         super().__init__(web_driver, url)
 
     cookies = WebElement(css_selector='body > div.cookie-popup > div')
+    discount_frame = WebElement(xpath='//*[@id="top-modal"]/div')
     clothes_tab = WebElement(css_selector='li.navigation-menu__item:nth-child(3)')
     first_product_picture = WebElement(xpath='/html/body/section/div[4]/div/div/div[1]/a/div[1]')
     uniq_product_article = WebElement(id='product__article')

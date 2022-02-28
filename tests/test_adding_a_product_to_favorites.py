@@ -3,12 +3,14 @@ from pom.adding_to_favorites import FavoritesProducts
 
 
 def test_adding_into_favorites(web_browser):
+    """The test adds to favorites and checks the favorites on the favorites' page with the article number."""
 
     page = FavoritesProducts(web_browser)
 
     page.kupalniki_tab.click()
     page.first_picture.click()
     page.cookies.delete()
+    page.discount_frame.delete()
     page.icon_add_to_favorites.scroll_to_element()
     page.icon_add_to_favorites.click()
     # Get the article from the liked product
